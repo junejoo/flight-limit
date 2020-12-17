@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="15dp"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ICN"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:id="@+id/tv_dept_eng"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인천"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_dept_kr"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21.04.30"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:id="@+id/tv_dept_date"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/to"
+            android:id="@+id/res_to"
+            android:layout_marginHorizontal="15dp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NYC"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:id="@+id/tv_arr_eng"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뉴욕"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_arr_kr"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21.04.30"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:id="@+id/tv_arr_date"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:background="@drawable/back3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text = "adult"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumsquareroundr"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text = "2"
+                android:id="@+id/tv_adult"
+                android:fontFamily="@font/nanumsquareroundb"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text = "child"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumsquareroundr"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text = "0"
+                android:id="@+id/tv_child"
+                android:fontFamily="@font/nanumsquareroundb"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text = "way"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumsquareroundr"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text = "one-way trip"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:id="@+id/tv_way"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text = "pricelimit"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumsquareroundr"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:id="@+id/ed_price_limit"
+                android:fontFamily="@font/nanumsquareroundb"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_marginVertical="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_skyblue"
+        android:text="Save This Alarm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/b_save"
+        android:paddingHorizontal="25dp"/>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile2"/>
+            <TextView
+                android:text="Hey, you!"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:id="@+id/t_hello"/>
+            <TextView
+                android:text="Check how are flight prices going"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:id="@+id/b_login"
+            android:background="@drawable/round_white"
+            android:textColor="@color/skyblue"
+            android:textStyle="bold"
+            android:layout_marginVertical="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색하기"
+            android:id="@+id/b_search"
+            android:background="@drawable/round_white"
+            android:textColor="@color/skyblue"
+            android:layout_marginVertical="10dp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알람목록"
+            android:visibility="invisible"
+            android:id="@+id/b_alarm"
+            android:background="@drawable/round_white"
+            android:textColor="@color/skyblue"
+            android:layout_marginVertical="10dp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="개인정보"
+            android:visibility="invisible"
+            android:id="@+id/b_info"
+            android:background="@drawable/round_white"
+            android:textColor="@color/skyblue"
+            android:layout_marginVertical="10dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:visibility="invisible"
+            android:id="@+id/b_logout"
+            android:background="@drawable/round_white"
+            android:textColor="@color/skyblue"
+            android:layout_marginVertical="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

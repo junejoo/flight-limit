@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finalexam.capstone1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_t"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".GlobalApplication">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="b3038f2227eab8d62724e632fd038208"/>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <!-- mypage -->
+        <activity android:name=".MyAlarmsActivity"/>
+
+        <!-- flight -->
+        <activity android:name=".SearchActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".SearchResultActivity"/>
+        <activity android:name=".SetAlarmActivity"/>
+
+        <!-- signup-->
+        <activity android:name=".SignupActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MemberInfoActivity"/>
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".ResultDetailActivity"/>
+        <service android:name=".ForcedTerminationService"
+            android:stopWithTask="false"/>
+        <activity android:name=".AlarmEdit"/>
+
+    </application>
+</manifest>

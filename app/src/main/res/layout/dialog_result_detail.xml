@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/back3"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <ListView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_detail" />
+        <TextView
+            android:id="@+id/tv_rd_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="총 비행시간 : 2시간 30분"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_detail_ok"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_skyblue"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>

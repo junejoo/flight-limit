@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile2"/>
+            <TextView
+                android:text="Hey, Alex!"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="bottom"/>
+            <TextView
+                android:text="Check how are fligths going"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:columnCount="2"
+                android:alignmentMode="alignBounds"
+                android:useDefaultMargins="true"
+                android:id="@+id/home_grid">
+                <Button
+                    android:text="My Alarm"
+                    android:textColor="@color/blue"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:id="@+id/btn_home_alarm"/>
+                <Button
+                    android:text="Search"
+                    android:textColor="@color/blue"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:id="@+id/btn_home_search"/>
+                <Button
+                    android:text="Search tips"
+                    android:layout_columnSpan="2"
+                    android:textColor="@color/blue"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:id="@+id/btn_home_tip"/>
+                <Button
+                    android:text="Stastics"
+                    android:textColor="@color/blue"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:id="@+id/btn_home_stastics"/>
+                <Button
+                    android:text="Alert"
+                    android:textColor="@color/blue"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:id="@+id/btn_home_alert"/>
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="If your trip date is already set,"
+                android:textSize="15dp"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btn_searchbydate"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:text="SEARCH ALL IN ONCE"
+                android:textColor="@color/blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:id="@+id/btn_home_h"
+            android:background="#00FFFFFF"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:id="@+id/btn_home_p"
+            android:background="#00FFFFFF"/>
+    </LinearLayout>
+
+
+</LinearLayout>
